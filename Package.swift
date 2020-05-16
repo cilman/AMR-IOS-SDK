@@ -19,9 +19,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "AMR-IOS-SDK",
-            dependencies: []),
+            path: "Source"),
         .testTarget(
             name: "AMR-IOS-SDKTests",
             dependencies: ["AMR-IOS-SDK"]),
-    ]
-)
+    ],
+    swiftLanguageVersions: [.v5])
